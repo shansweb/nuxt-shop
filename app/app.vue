@@ -1,12 +1,13 @@
 <script setup lang="ts">
-import TestComp from './widgets/TestComp.vue';
-const hello = ref('hello');
+const runtime = useRuntimeConfig();
+// const config = useAppConfig();
+const hello = ref(runtime.public.apiurl);
 </script>
 
 <template>
   <div>
     {{ hello }}
-    <TestComp />
+    <SharedTestComp />
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
   </div>
