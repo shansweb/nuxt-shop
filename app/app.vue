@@ -7,8 +7,6 @@ const hello = ref(runtime.public.apiurl);
 <template>
   <div>
     {{ hello }}
-    <SharedTestComp />
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtPage />
   </div>
 </template>
