@@ -8,6 +8,23 @@
     --color-white-light: #FFFFFF;
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 body {
     font-family: var(--font);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+    color: var(--color-black);
+    font-weight: 500;
+    font-size: 33px;
+    line-height: 43px;
+    text-align: center;
+
 }

@@ -1,13 +1,12 @@
 <script setup lang="ts">
+import type { LayoutKey } from '#build/types/nitro-layouts';
 import '~/assets/styles/main.css';
-const runtime = useRuntimeConfig();
-// const config = useAppConfig();
-const hello = ref(runtime.public.apiurl);
+
+const name = ref<LayoutKey>('auth');
 </script>
 
 <template>
-  <div>
-    {{ hello }}
+  <NuxtLayout :name="name">
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
