@@ -6,6 +6,7 @@ import InputField from './inputField.vue';
 
 <template>
     <div class="footer">
+        <hr>
         <div class="footer__top">
             <ul>
                 <li><NuxtLink to="#">Контакты</NuxtLink></li>
@@ -46,6 +47,12 @@ import InputField from './inputField.vue';
     display: flex;
     flex-direction: column;
     gap: 50px;
+}
+
+.footer hr {
+    border: none;
+    border-bottom: 1px solid var(--color-gray);
+    height: 1px;
 }
 
 .footer__top {
